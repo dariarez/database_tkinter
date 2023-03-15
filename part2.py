@@ -1,7 +1,7 @@
 import tkinter as tk
 import mysql.connector
 
-n = int(input('введіть число(від 1 до 13): '))
+n = int(input('enter number(from 1 to 13): '))
 
 window = tk.Tk()
 
@@ -15,7 +15,7 @@ button.pack()
 
 def datab(a):
     if 13<a<1:
-        print('вибачте, такого числа не існує в таблиці')
+        print('sorry, this number does not exist in the table')
     else:
         connection = mysql.connector.connect(host='localhost',
                                          database='datab',
